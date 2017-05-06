@@ -5,6 +5,7 @@
 
 </head>
 <body>
+<div align="center">
 <form action="" method="get" accept-charset="GBK">
 	<input type="text" id="input" name="one" value="中文">
 
@@ -26,5 +27,6 @@
 	
 	  <input type="submit" value="Submit">
    </form>
+   </div>
    </body>
    </html>
