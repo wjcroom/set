@@ -1,8 +1,8 @@
 <html>
 <head>
 	<style>
-input[type=text], select {
-    width: 100%;
+input[type=text]{
+    width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -10,7 +10,15 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
+input[type= select] {
+    width: 80px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -37,26 +45,32 @@ div {
 
 </head>
 <body>
+	
 <div>
+<h3> 设置</h3>
 	<form action="http://192.168.4.1/" method="get" accept-charset="GBK">
-	<input type="text" id="input" name="one" value="中文">
-
+<div>
+	<label for="fname">首行文字：</label>
+		<input type="text" id="input" name="one" value="中文">
+	<label for="fname">字体：</label>
 	<select id="charset" name="onesize">
 		<option value="1">大</option>
 		<option value="2">中</option>
 		<option value="3">小</option>
 	</select>
-
+		</div>
+		<div>
+           <label for="fname">尾行文字：</label>
 		<input type="text" id="input" name="two" value="文">
-	  	<select id="charset" name="twosize">
+	 			<label for="fname">字体：</label>
+		<select id="charset" name="twosize">
+
 		<option value="1">大</option>
 		<option value="2">中</option>
 		<option value="3">小</option>
 	</select>
-
-		编码结果：
-		<textarea style="display: block" id="output"></textarea>
-	
+</div>
+	 
 	  <input type="submit" value="Submit">
 		
    </form>
