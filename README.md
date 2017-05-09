@@ -6,7 +6,7 @@
 </head>
 <body>
 <div align="center">
-<form action="" method="get" accept-charset="GBK">
+<form action="http://192.168.4.1/" method="get" accept-charset="GBK">
 	<input type="text" id="input" name="one" value="中文">
 
 	<select id="charset" name="onesize">
@@ -22,9 +22,7 @@
 		<option value="3">小</option>
 	</select>
 	</div>
-		编码结果：
-		<textarea style="display: block" id="output"></textarea>
-	
+	 
 	  <input type="submit" value="Submit">
    </form>
    </div>
